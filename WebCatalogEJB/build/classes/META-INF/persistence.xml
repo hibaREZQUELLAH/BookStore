@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+ 
+ 	<persistence-unit name="managerWebCatalog" transaction-type="JTA">
+ 		<jta-data-source>java:/webCatalog</jta-data-source>
+ 		<class>webcatalog.eilco.Categorie</class>
+ 		<class>webcatalog.eilco.Client</class>
+ 		<class>webcatalog.eilco.Commande</class>
+ 		<class>webcatalog.eilco.LigneCommande</class>
+ 		<class>webcatalog.eilco.Produit</class>
+ 		<properties>
+ 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+ 			<property name="hibernate.hbm2ddl.auto" value="update" />
+ 			<property value="true" name="hibernate.show_sql"/>
+ 		</properties>
+ 	</persistence-unit>
+</persistence>
